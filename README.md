@@ -16,6 +16,8 @@ My List
 * Welcome Page
 * Login Page
 * Chat Page
+* Stylesheet
+* JS to comunicate with Server
 
 - Back End
 
