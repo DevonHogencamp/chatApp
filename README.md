@@ -24,3 +24,15 @@ My List
 * chatController.js
 * app.js
 * Auth
+
+- Later Front
+
+* Groups
+* User Active/Inactive
+* Admin Interface
+
+- Later Back
+
+* Admin
+* Groups
+* User Active/Inactive
