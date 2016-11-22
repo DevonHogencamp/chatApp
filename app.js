@@ -13,8 +13,11 @@ app.set('view engine', 'ejs');
 // Static Files
 app.use(express.static('./public'));
 
-// Fire the controller for the welcome page
-welcomeController(app);
+/*  Temporary Handle Req  */
+app.get('/', function (req, res) {
+    // Render the Welcome Page
+    res.render('welcome');
+});
 
 // Listen for the 3000 port
 app.listen(3000);

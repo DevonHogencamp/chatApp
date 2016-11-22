@@ -1,0 +1,30 @@
+body{
+    background: #002834;
+    font-family: tahoma;
+    color: #FFF;
+    margin: 0;
+}
+
+.wrapper{
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header .wrapper{
+    width: 90%;
+    padding: 5px 0px;
+    margin: 0 auto;
+}
+
+header{
+    background: #26547C;
+    margin: 0;
+    width: 100%;
+}
+
+header img{
+    float: left;
+    width: 120px;
+    margin-top: 4px;
+}
