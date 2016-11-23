@@ -6,7 +6,7 @@ body{
 }
 
 .wrapper{
-    width: 90%;
+    width: 70%;
     padding: 20px;
     margin: 0 auto;
 }
@@ -27,4 +27,136 @@ header img{
     float: left;
     width: 120px;
     margin-top: 4px;
+}
+
+header::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header nav::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header nav li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+header nav li:hover{
+    background: #2ec4b6;
+}
+
+.wrapper::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#hero{
+    background: #18BC9C;
+    padding: 50px;
+}
+
+#hero img{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+
+#hero h1{
+    font-size: 100px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+}
+
+#hero h3{
+    font-size: 50px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.form{
+    width: 100%;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background:#181c22;
+    font-size: 20px;
+    color: #989898;
+    border: 0;
+}
+
+button{
+    padding: 20px;
+    width: 30%;
+    background: #2ec4b6;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    margin: 50px auto;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background: #181c22;
+}
+
+footer li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    margin: 0 97.5px;
+    background: #1d9079;
+}
+
+footer ul{
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+footer li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
 }
