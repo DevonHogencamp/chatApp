@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Down the lines I plan to make the site mobile friendly so this will help -->
+        <meta name="viewport" content="width=device-width">
+        <title>ChatIO | Chat Room</title>
+        <link rel="stylesheet" href="/assets/chat.css" type="text/css">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>#General</li>
+                    <li>#Code</li>
+                    <li>#Memes</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="chatRoom">
+
+        </div>
+
+        <form id="sendMessage" action="/chatRoom/message" method="post">
+            <input type="text" name="message" placeholder="Say Something...">
+
+            <button type="submit" name="sendMessage">Send</button>
+        </form>
+    </body>
+</html>

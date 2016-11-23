@@ -19,6 +19,11 @@ app.get('/', function (req, res) {
     res.render('welcome');
 });
 
+app.get('/chatRoom', function (req, res) {
+    // Render the Chat Page
+    res.render('chat');
+});
+
 // Listen for the 3000 port
 app.listen(3000);
 

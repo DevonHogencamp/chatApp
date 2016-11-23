@@ -1,0 +1,61 @@
+body{
+    font-family: tahoma;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    background: #2ec4b6;
+    overflow: hidden;
+}
+
+header{
+    background: #26547C;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    position: absolute;
+    top: 0px;
+}
+
+#chatRoom {
+    position: fixed;
+    position: absolute;
+    top: 89px;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    background: #002834;
+    overflow-y: scroll;
+}
+
+#sendMessage{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    position: absolute;
+    bottom: 0px;
+}
+
+#sendMessage input{
+    margin: 0;
+    width: 90%;
+    background:#181c22;
+    font-size: 25px;
+    padding: 2px;
+    color: #989898;
+    border: 0;
+    height: 50px;
+}
+
+#sendMessage button{
+    position: fixed;
+    position: absolute;
+    width: 9.741%;
+    background: #2ec4b6;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    bottom: 0px;
+}
