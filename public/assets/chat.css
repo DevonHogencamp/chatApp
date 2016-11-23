@@ -16,15 +16,52 @@ header{
     top: 0px;
 }
 
+#channels{
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    margin: 5px 10px;
+    list-style-type: none;
+}
+
+nav ul li:hover{
+    color: #18BC9C;
+    cursor: pointer;
+}
+
+nav ul{
+    padding: 0 40px;
+}
+
+nav ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#users{
+    float: right;
+}
+
 #chatRoom {
     position: fixed;
     position: absolute;
-    top: 89px;
+    top: 61px;
     right: 0;
     bottom: 50px;
     left: 0;
     background: #002834;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+#chatRoom::-webkit-scrollbar {
+    display: none;
+}
+
+#chats{
+    padding: 0px;
 }
 
 #sendMessage{
@@ -58,4 +95,26 @@ header{
     font-size: 20px;
     height: 50px;
     bottom: 0px;
+}
+
+#chat{
+    position: absolute;
+    bottom: 0px;
+}
+
+h1{
+    display: block;
+    clear: both;
+    float: left;
+    background: #18BC9C;
+    padding: 10px;
+    margin: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+h1.me{
+    float: right;
+    background: #5ef38c;
 }

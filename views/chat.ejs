@@ -9,17 +9,38 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="channels">
                 <ul>
                     <li>#General</li>
                     <li>#Code</li>
                     <li>#Memes</li>
                 </ul>
             </nav>
+
+            <nav id="users">
+                <ul>
+                    <li>Devon</li>
+                    <li>John</li>
+                    <li>Bob</li>
+                    <li>
+                        <img src="/assets/settings.png" alt="Settings">
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <div id="chatRoom">
-
+            <ul id="chats">
+                <h1 class="me">Hello World!!</h1>
+                <h1>Hello!!</h1>
+                <h1>Welcome</h1>
+                <h1 class="me">Thanks for the greeting</h1>
+                <h1 class="me">What are your names?</h1>
+                <h1>Im John</h1>
+                <h1>Im Bob</h1>
+                <h1>What is your name?</h1>
+                <h1 class="me">I am Devon</h1>
+            </ul>
         </div>
 
         <form id="sendMessage" action="/chatRoom/message" method="post">
@@ -27,5 +48,9 @@
 
             <button type="submit" name="sendMessage">Send</button>
         </form>
+
+        <!-- We use Jquery and the welcome.js to send GET and POST requests -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/assets/chat.js"></script>
     </body>
 </html>
