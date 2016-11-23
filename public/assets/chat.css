@@ -7,21 +7,21 @@ body{
     overflow: hidden;
 }
 
-header{
+nav{
     background: #26547C;
-    width: 100%;
-    margin: 0;
     position: fixed;
     position: absolute;
     top: 0px;
+    bottom: 0;
+    right: 85%;
 }
 
-#channels{
-    float: left;
+nav h2{
+    text-align: center;
 }
+
 
 nav ul li{
-    float: left;
     margin: 5px 10px;
     list-style-type: none;
 }
@@ -35,23 +35,13 @@ nav ul{
     padding: 0 40px;
 }
 
-nav ul::after{
-    display: block;
-    content: "";
-    clear: both;
-}
-
-#users{
-    float: right;
-}
-
 #chatRoom {
     position: fixed;
     position: absolute;
-    top: 61px;
-    right: 0;
+    top: 0px;
+    right: 0px;
     bottom: 50px;
-    left: 0;
+    left: 15%;
     background: #002834;
     overflow-y: auto;
 }
@@ -73,20 +63,23 @@ nav ul::after{
 }
 
 #sendMessage input{
+    position: fixed;
+    position: absolute;
     margin: 0;
-    width: 90%;
+    width: 75%;
     background:#181c22;
     font-size: 25px;
     padding: 2px;
     color: #989898;
     border: 0;
     height: 50px;
+    left: 15%;
 }
 
 #sendMessage button{
     position: fixed;
     position: absolute;
-    width: 9.741%;
+    width: 10%;
     background: #2ec4b6;
     border: 0;
     box-sizing: border-box;
@@ -95,6 +88,7 @@ nav ul::after{
     font-size: 20px;
     height: 50px;
     bottom: 0px;
+    right: 0;
 }
 
 #chat{

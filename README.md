@@ -7,6 +7,7 @@ Chat I/O: A simple chat application which can be a stand-alone project, or can b
 -   Send and receive chat messages
 -   Display active/inactive users
 -   Permit group chats
+-   
 
 
 ## My List
