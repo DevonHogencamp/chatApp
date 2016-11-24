@@ -7,7 +7,7 @@ Chat I/O: A simple chat application which can be a stand-alone project, or can b
 -   Send and receive chat messages
 -   Display active/inactive users
 -   Permit group chats
--   
+-
 
 
 ## My List
@@ -19,6 +19,12 @@ Chat I/O: A simple chat application which can be a stand-alone project, or can b
 *   Chat Page
 *   Stylesheet
 *   JS to comunicate with Server
+*   Settings Page
+-Username
+-Update Info
+-Delete Account
+-Create channel
+-Delete channel
 
 ### Back End
 

@@ -14,16 +14,52 @@ nav{
     top: 0px;
     bottom: 0;
     right: 85%;
+    left: 0;
+}
+
+#settings{
+    padding: 15px;
+    cursor: pointer;
+}
+
+#user{
+    display: inline;
+    background: #18BC9C;
+    padding: 10px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+nav img{
+    display: inline;
+    width: 40px;
+    margin-left: 10px;
 }
 
 nav h2{
     text-align: center;
 }
 
-
 nav ul li{
     margin: 5px 10px;
     list-style-type: none;
+}
+
+
+nav ul li.active{
+    color: #18BC9C;
+    list-style-type: disc;
+}
+
+nav ul li span{
+    color: white;
+}
+
+nav ul li span:hover{
+    color: #18BC9C;
+    cursor: pointer;
 }
 
 nav ul li:hover{
@@ -33,6 +69,10 @@ nav ul li:hover{
 
 nav ul{
     padding: 0 40px;
+}
+
+#channels li{
+
 }
 
 #chatRoom {
