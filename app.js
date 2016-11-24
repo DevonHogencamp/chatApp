@@ -24,6 +24,11 @@ app.get('/chatRoom', function (req, res) {
     res.render('chat');
 });
 
+app.get('/settings', function (req, res) {
+    // Render the Settings Page
+    res.render('settings');
+});
+
 // Listen for the 3000 port
 app.listen(3000);
 

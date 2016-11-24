@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Down the lines I plan to make the site mobile friendly so this will help -->
+        <meta name="viewport" content="width=device-width">
+        <title>ChatIO | Settings</title>
+        <link rel="stylesheet" href="/assets/css/settings.css" type="text/css">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>dhogencamp</h1>
+
+            <h1>Update Info</h1>
+
+            <form id="updateInfo" class="form" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+
+                <button type="submit" name="signIn">Update Info</button>
+            </form>
+
+            <form id="deleteAccount" method="delete">
+                <input type="hidden" name="account" value="">
+                <!-- INSERT ACCOUNT NAME WITH EJS -->
+                <button type="submit" name="deleteAccount">Delete Account</button>
+            </form>
+
+            <h1>Create Channel</h1>
+
+            <form id="createChannel" class="form" method="post">
+                <input type="text" name="channel" placeholder="Name of Channel">
+                <button type="submit" name="createChannel">Create Channel</button>
+            </form>
+
+            <h1>Delete Channel</h1>
+
+            <ul id="channels">
+                <li>General</li>
+                <li>Code</li>
+                <li>Memes</li>
+            </ul>
+        </div>
+    </body>
+</html>
