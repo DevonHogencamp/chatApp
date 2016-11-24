@@ -3,13 +3,13 @@
     <head>
         <!-- Down the lines I plan to make the site mobile friendly so this will help -->
         <meta name="viewport" content="width=device-width">
-        <title>ChatIO | Settings</title>
+        <title>ChatIO | Admin Settings</title>
         <link rel="stylesheet" href="/assets/css/settings.css" type="text/css">
         <link rel="shortcut icon" href="/assets/favicon.ico">
     </head>
     <body>
         <div class="wrapper">
-            <h1 id="user">dhogencamp</h1>
+            <h1 id="user">Admin</h1>
 
             <h1>Update Info</h1>
 
@@ -20,11 +20,20 @@
                 <button type="submit" name="updateInfo">Update Info</button>
             </form>
 
-            <form id="deleteAccount" method="delete">
-                <input type="hidden" name="account" value="">
-                <!-- INSERT ACCOUNT NAME WITH EJS -->
-                <button type="submit" name="deleteAccount">Delete Account</button>
+            <h1>Create User</h1>
+
+            <form id="createUser" class="form" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+
+                <button type="submit" name="createUser">Create User</button>
             </form>
+
+            <h1>Delete User</h1>
+
+            <h2>Devon</h2>
+            <h2>John</h2>
+            <h2>Bob</h2>
 
             <h1>Create Channel</h1>
 

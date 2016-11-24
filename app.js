@@ -29,6 +29,16 @@ app.get('/settings', function (req, res) {
     res.render('settings');
 });
 
+app.get('/settingsAdmin', function (req, res) {
+    // Render the settingsAdmin Page
+    res.render('settingsAdmin');
+});
+
+app.get('/chatAdmin', function (req, res) {
+    // Render the settingsAdmin Page
+    res.render('chatAdmin');
+});
+
 // Listen for the 3000 port
 app.listen(3000);
 

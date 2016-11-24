@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Down the lines I plan to make the site mobile friendly so this will help -->
+        <meta name="viewport" content="width=device-width">
+        <title>ChatIO | Admin Chat Room</title>
+        <link rel="stylesheet" href="/assets/css/chat.css" type="text/css">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <nav>
+            <div id="settings">
+                <h1 id="user">Admin</h1>
+                <img src="/assets/img/settings.png" alt="Settings">
+            </div>
+
+            <h2>Channels</h2>
+
+            <ul id="channels">
+                <li>#General</li>
+                <li>#Code</li>
+                <li>#Memes</li>
+            </ul>
+
+            <h2>Users</h2>
+
+            <ul id="users">
+                <li class="active"><span>Devon</span></li>
+                <li><span>John</span></li>
+                <li class="active"><span>Bob</span></li>
+            </ul>
+        </nav>
+
+        <div id="chatRoom">
+            <ul id="chats">
+                <h1 class="me">Hello World!!</h1>
+                <h1>Hello!!</h1>
+                <h1>Welcome</h1>
+                <h1 class="me">Thanks for the greeting</h1>
+                <h1 class="me">What are your names?</h1>
+                <h1>Im John</h1>
+                <h1>Im Bob</h1>
+                <h1>What is your name?</h1>
+                <h1 class="me">I am Devon</h1>
+                <h1>Im John</h1>
+                <h1>Im Bob</h1>
+                <h1>What is your name?</h1>
+                <h1 class="me">I am Devon</h1>
+            </ul>
+        </div>
+
+        <form id="sendMessage" method="post">
+            <input type="text" name="message" placeholder="Say Something...">
+
+            <button type="submit" name="sendMessage">Send</button>
+        </form>
+
+        <!-- We use Jquery and the welcome.js to send GET and POST requests -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/assets/js/chatAdmin.js"></script>
+    </body>
+</html>
