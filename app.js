@@ -46,14 +46,14 @@ app.get('/chatAdmin', function (req, res) {
 app.post('/signIn', urlencodedParser, function (req, res) {
     console.log(req.body);
 
-    res.render('chat');
+    res.render('chat', {data: req.body});
 });
 
 // When user signs up log the req and send them to the chat room
 app.post('/signUp', urlencodedParser, function (req, res) {
     console.log(req.body);
 
-    res.render('chat');
+    res.render('chat', {data: req.body});
 });
 
 // Listen for the 3000 port
