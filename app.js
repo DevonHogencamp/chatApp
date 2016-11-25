@@ -16,6 +16,9 @@ app.set('view engine', 'ejs');
 // Static Files
 app.use(express.static('./public'));
 
+// Temp messages data
+
+
 /*  Temporary Handle Req  */
 app.get('/', function (req, res) {
     // Render the Welcome Page
@@ -46,7 +49,7 @@ app.get('/chatAdmin', function (req, res) {
 app.post('/signIn', urlencodedParser, function (req, res) {
     console.log(req.body);
 
-    res.render('chat', {data: req.body});
+    res.render('chat', {data: req.body, hello: "Hello"});
 });
 
 // When user signs up log the req and send them to the chat room
