@@ -2,7 +2,10 @@
 
 // Require all neccesary packages
 var express = require('express');
-var welcomeController = require('./controllers/welcomeController');
+var bodyParser = require('body-parser');
+
+// Set up body parser
+var urlencodedParser = bodyParser.urlencoded({extended: false});
 
 // Start the express app
 var app = express();
@@ -37,6 +40,20 @@ app.get('/settingsAdmin', function (req, res) {
 app.get('/chatAdmin', function (req, res) {
     // Render the settingsAdmin Page
     res.render('chatAdmin');
+});
+
+// When user signs in log the req and send them to the chat room
+app.post('/signIn', urlencodedParser, function (req, res) {
+    console.log(req.body);
+
+    res.render('chat');
+});
+
+// When user signs up log the req and send them to the chat room
+app.post('/signUp', urlencodedParser, function (req, res) {
+    console.log(req.body);
+
+    res.render('chat');
 });
 
 // Listen for the 3000 port
