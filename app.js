@@ -16,7 +16,8 @@ app.set('view engine', 'ejs');
 // Static Files
 app.use(express.static('./public'));
 
-// Temp messages data
+/*     Bunnch of Temp Data     */
+var channels = ["General", "Code", "Memes", "Dank Memes"];
 
 
 /*  Temporary Handle Req  */
@@ -49,7 +50,7 @@ app.get('/chatAdmin', function (req, res) {
 app.post('/signIn', urlencodedParser, function (req, res) {
     console.log(req.body);
 
-    res.render('chat', {data: req.body, hello: "Hello"});
+    res.render('chat', {data: req.body, channels: channels});
 });
 
 // When user signs up log the req and send them to the chat room

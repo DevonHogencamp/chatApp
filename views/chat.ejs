@@ -17,10 +17,9 @@
             <h2>Channels</h2>
 
             <ul id="channels">
-                <li>#General</li>
-                <li>#Code</li>
-                <li>#Memes</li>
-                <li>#<%= hello %></li>
+                <% for(var i=0; i<channels.length; i++) {%>
+                    <li><%= channels[i] %></li>
+                <% } %>
             </ul>
 
             <h2>Users</h2>
