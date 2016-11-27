@@ -2,10 +2,11 @@
 
 // Require all neccesary packages
 var express = require('express');
-var bodyParser = require('body-parser');
 
-// Set up body parser
-var urlencodedParser = bodyParser.urlencoded({extended: false});
+var chatController = require('./controllers/chatController');
+var settingsController = require('./controllers/settingsController');
+var chatAdminController = require('./controllers/chatAdminController');
+var settingsAdminController = require('./controllers/settingsAdminController');
 
 // Start the express app
 var app = express();
@@ -16,49 +17,20 @@ app.set('view engine', 'ejs');
 // Static Files
 app.use(express.static('./public'));
 
-/*     Bunnch of Temp Data     */
-var channels = ["General", "Code", "Memes", "Dank Memes"];
 
-
-/*  Temporary Handle Req  */
+// When user req the home page
 app.get('/', function (req, res) {
     // Render the Welcome Page
     res.render('welcome');
 });
 
-app.get('/chatRoom', function (req, res) {
-    // Render the Chat Page
-    res.render('chat');
-});
+chatController(app);
 
-app.get('/settings', function (req, res) {
-    // Render the Settings Page
-    res.render('settings');
-});
+settingsController(app);
 
-app.get('/settingsAdmin', function (req, res) {
-    // Render the settingsAdmin Page
-    res.render('settingsAdmin');
-});
+chatAdminController(app);
 
-app.get('/chatAdmin', function (req, res) {
-    // Render the settingsAdmin Page
-    res.render('chatAdmin');
-});
-
-// When user signs in log the req and send them to the chat room
-app.post('/signIn', urlencodedParser, function (req, res) {
-    console.log(req.body);
-
-    res.render('chat', {data: req.body, channels: channels});
-});
-
-// When user signs up log the req and send them to the chat room
-app.post('/signUp', urlencodedParser, function (req, res) {
-    console.log(req.body);
-
-    res.render('chat', {data: req.body});
-});
+settingsAdminController(app);
 
 // Listen for the 3000 port
 app.listen(3000);
