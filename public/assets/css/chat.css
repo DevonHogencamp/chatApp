@@ -131,16 +131,10 @@ nav ul{
     right: 0;
 }
 
-#chat{
-    position: absolute;
-    bottom: 0px;
-}
-
 h1{
-    display: block;
+    display: inline;
     clear: both;
     float: left;
-    background: #18BC9C;
     padding: 10px;
     margin: 15px;
     font-size: 15px;
@@ -148,7 +142,20 @@ h1{
     border-radius: 10px;
 }
 
+.identify{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    text-align: center;
+    margin: 5px;
+    display: inline;
+}
+
 h1.me{
     float: right;
-    background: #5ef38c;
 }

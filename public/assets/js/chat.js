@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    var objDiv = document.getElementById("chatRoom");
-    objDiv.scrollTop = objDiv.scrollHeight;
-
-    
+    var chatRoom = document.getElementById("chatRoom");
+    chatRoom.scrollTop = chatRoom.scrollHeight;
 });
