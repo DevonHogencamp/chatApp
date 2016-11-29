@@ -15,4 +15,9 @@ module.exports = function (app) {
         // Render the Chat Page
         res.render('chat', {data: req.body, channels: channels});
     });
+
+    app.post('/chat/msg', urlEncodedParser, function (req, res) {
+        // Render the Chat Page after we recieve msg
+        res.render('chat', {channels: channels, msg: req.body});
+    });
 };

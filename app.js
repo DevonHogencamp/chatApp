@@ -17,7 +17,6 @@ app.set('view engine', 'ejs');
 // Static Files
 app.use(express.static('./public'));
 
-
 // When user req the home page
 app.get('/', function (req, res) {
     // Render the Welcome Page
